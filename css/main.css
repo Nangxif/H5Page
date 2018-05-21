@@ -63,9 +63,9 @@ body{
 	padding-top: 0.2rem;
 }
 .self-info-pic{
-	flex: 0 0 1.5rem;
-	width: 1.5rem;
-	height: 1.5rem;
+	flex: 0 0 1.3rem;
+	width: 1.3rem;
+	height: 1.3rem;
 	margin-left: 0.2rem;
 	background:url('../img/1.png');
 	background-repeat: no-repeat;
@@ -76,8 +76,8 @@ body{
 .self-info-name{
 	flex: 1;
 	padding-left: 0.2rem;
-	height: 1.5rem;
-	line-height: 1.5rem;
+	height: 1.3rem;
+	line-height: 1.3rem;
 	font-size: 34%;
 	color: white;
 	font-weight: 600;
@@ -115,7 +115,7 @@ body{
 }
 .tips_1,.tips_2{
 	padding-left: 0.5rem;
-	font-size: 38%;
+	font-size: 36%;
 }
 .tips_1{
 	padding-top: 0.35rem;
@@ -123,7 +123,7 @@ body{
 .tips_3{
 	padding-left: 0.5rem;
 	padding-top:0.1rem; 
-	font-size: 30%;
+	font-size: 28%;
 	color: #676767;
 }
 .tips img{
@@ -234,18 +234,20 @@ body{
 	display: block;
 	position: absolute;
 	left: 0.42rem;
-	bottom: 1.6rem;
+	bottom: 1.3rem;/*1.6rem*/
 	width: 0.86805rem;
 	font-size: 0.24rem !important;
 	text-align: center;
+	opacity: 0;
 }
 .page_3_content_1 .self_num{
 	position: absolute;
 	left: 1.69rem;
-	bottom: 1.9rem;
+	bottom: 1.6rem;/*1.9rem*/
 	width: 0.86805rem;
 	font-size: 0.24rem !important;
 	text-align: center;
+	opacity: 0;
 }
 .page_3_content_1 .pic_1{
 	position: absolute;
@@ -296,18 +298,20 @@ body{
 	display: block;
 	position: absolute;
 	left: 0.42rem;
-	bottom: 1.8rem;
+	bottom: 1.5rem;/*1.8rem*/
 	width: 0.86805rem;
 	font-size: 0.24rem !important;
 	text-align: center;
+	opacity: 0;
 }
 .page_3_content_2 .self_num{
 	position: absolute;
 	left: 1.69rem;
-	bottom: 1.4rem;
+	bottom: 1.1rem;/*1.4rem*/
 	width: 0.86805rem;
 	font-size: 0.24rem !important;
 	text-align: center;
+	opacity: 0;
 }
 .page_3_content_2 .pic_1{
 	position: absolute;
@@ -359,18 +363,20 @@ body{
 	display: block;
 	position: absolute;
 	left: 0.42rem;
-	bottom: 1.3rem;
+	bottom: 1rem;/*1.3rem*/
 	width: 0.86805rem;
 	font-size: 0.24rem !important;
 	text-align: center;
+	opacity: 0;
 }
 .page_3_content_3 .self_num{
 	position: absolute;
 	left: 1.69rem;
-	bottom: 1.9rem;
+	bottom: 1.6rem;/*1.9rem*/
 	width: 0.86805rem;
 	font-size: 0.24rem !important;
 	text-align: center;
+	opacity: 0;
 }
 .page_3_content_3 .pic_1{
 	position: absolute;
@@ -421,18 +427,20 @@ body{
 	display: block;
 	position: absolute;
 	left: 0.42rem;
-	bottom: 1.1rem;
+	bottom: 0.8rem;/*1.1rem*/
 	width: 0.86805rem;
 	font-size: 0.24rem !important;
 	text-align: center;
+	opacity: 0;
 }
 .page_3_content_4 .self_num{
 	position: absolute;
 	left: 1.69rem;
-	bottom: 2rem;
+	bottom: 1.7rem;/*2rem*/
 	width: 0.86805rem;
 	font-size: 0.24rem !important;
 	text-align: center;
+	opacity: 0;
 }
 .page_3_content_4 .pic_1{
 	position: absolute;
@@ -600,10 +608,10 @@ body{
 }
 .parameter ul li{
 	display: flex;
-	height: 1.8rem;
+	height: 1.6rem;
 	list-style: none;
 	color:#474747;
-	font-size: 0.36rem;
+	font-size: 0.34rem;
 }
 .parameter .level{
 	flex: 0 0 1rem;
@@ -617,13 +625,13 @@ body{
 	flex: 1;
 	padding-left: 0.3rem;
 	height: 100%;
-	line-height: 1.8rem;
+	line-height: 1.6rem;
 }
 .parameter .grade{
 	flex: 0 0 1rem;
 	width: 1rem;
 	height: 100%;
-	line-height: 1.8rem;
+	line-height: 1.6rem;
 	text-align: center;
 }
 
@@ -631,14 +639,14 @@ body{
 .parameter img{
 	display: inline-block;
 	margin-top: 0.4rem;
-	width: 0.6rem;
-	height: 1rem;
+	width: 0.5rem;
+	height: 0.8rem;
 }
 .parameter .pic{
-	flex: 0 0 1.4rem;
+	flex: 0 0 1.2rem;
 	margin-top: 0.2rem;
-	width: 1.4rem;
-	height: 1.4rem;
+	width: 1.2rem;
+	height: 1.2rem;
 	border: 2px solid white;
 	border-radius: 50%;
 	background-repeat: no-repeat !important;
