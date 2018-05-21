@@ -606,7 +606,7 @@ body{
 	font-size:37% !important;
 }
 .page_5 p{
-	margin-bottom: 0.3rem;
+	margin-bottom: 0.2rem;
 	line-height: 0.5rem;
 	color: #474747;
 	font-size: 34%;
@@ -622,9 +622,10 @@ body{
 	line-height: 0.3rem;
 }
 #myCanvatext .result{
-	font-size: 40%;
+	font-size: 36%;
 	line-height: 0.7rem;
 	margin-bottom: 0px;
+	color
 }
 #myCanvatext .results{
 	font-size: 25%;
