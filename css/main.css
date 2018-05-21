@@ -1,11 +1,3 @@
-@font-face {
-	font-family: 'bootstrapfont';
-	src: url('./bootstrap/fonts/glyphicons-halflings-regular.eot'); /* IE9 Compat Modes */
-	src: url('./bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	url('./bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), /* Modern Browsers */
-	url('./bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-	url('./bootstrap/fonts/glyphicons-halflings-regular.svg#YourWebFontName') format('svg'); /* Legacy iOS */
-}
 *{
 	margin: 0px;
 	padding: 0px;
@@ -13,6 +5,12 @@
 }
 body{
 	background: #f5f5f5;
+	max-width:99999px;
+	max-height: 999999px;
+}
+.text{
+	width: 100%;
+	max-height:5.3rem; 
 }
 .top{
 	width: 100%;
@@ -63,9 +61,9 @@ body{
 	padding-top: 0.2rem;
 }
 .self-info-pic{
-	flex: 0 0 1.3rem;
-	width: 1.3rem;
-	height: 1.3rem;
+	flex: 0 0 0.9rem;
+	width: 0.9rem;
+	height: 0.9rem;
 	margin-left: 0.2rem;
 	background:url('../img/1.png');
 	background-repeat: no-repeat;
@@ -76,8 +74,8 @@ body{
 .self-info-name{
 	flex: 1;
 	padding-left: 0.2rem;
-	height: 1.3rem;
-	line-height: 1.3rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
 	font-size: 34%;
 	color: white;
 	font-weight: 600;
@@ -113,23 +111,25 @@ body{
 	height: 0.7rem;
 	background:#ebf9ff;
 }
-.tips_1,.tips_2{
-	padding-left: 0.5rem;
-	font-size: 36%;
-}
 .tips_1{
 	padding-top: 0.35rem;
+	padding-left: 0.2rem;
+	font-size: 38%;
+}
+.tips_2{
+	padding-left: 0.35rem;
+	padding-top:0.1rem; 
+	font-size: 36%;
 }
 .tips_3{
-	padding-left: 0.5rem;
-	padding-top:0.1rem; 
+	padding-left: 0.35rem;
 	font-size: 28%;
 	color: #676767;
 }
 .tips img{
 	display: block;
 	position: absolute;
-	right: 0.2rem;
+	right: 0.3rem;
 	top: 0.2rem;
 	width: 1.6rem;
 }
@@ -142,25 +142,33 @@ body{
 	margin-top: 0.3rem;
 	margin-left: 0.3rem;
 	margin-right:0.3rem;
-	padding: 0.325rem;
-	border:2px solid #eaeaea;
+	padding: 0.5rem 0.325rem 0.5rem 0.325rem;
+	background-color:white;
 	border-radius: 20px;
-	background: white;
+	-moz-box-shadow:0px 0px 6px #d6d4d4; 
+	-webkit-box-shadow:0px 0px 6px #d6d4d4;
+	box-shadow:0px 0px 6px #d6d4d4;
 }
 .page_2_title{
-	font-size:38%;
+	margin-bottom: 0.2rem;
 	color:#0098ff !important;
+	font-size:37% !important;
 }
 .page_2 p{
 	display: flex;
-	font-size: 36px;
-	line-height: 0.7rem;
+	font-size: 34%;
+	line-height: 0.5rem;
 	color: #474747;
+	-webkit-text-size-adjust: none;
+	/*max-height:100%;*/
 }
 .page_2 .list_1{
-	padding: 0.4rem 0.29rem 0rem 0.29rem;
-	height: 1.4rem;
-	font-size: 36px;
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 0.3rem;
+	padding: 0.2rem 0.29rem 0.2rem 0.29rem;
+	background-color: #f0f9ff;
+	border-radius: 20px; 
 }
 .page_2 span{
 	flex: 1;
@@ -190,18 +198,20 @@ body{
 	margin-top: 0.3rem;
 	margin-left: 0.3rem;
 	margin-right:0.3rem;
-	padding: 0.325rem;
-	border:2px solid #eaeaea;
+	padding: 0.5rem 0.325rem 0.5rem 0.325rem;
+	background-color:white;
 	border-radius: 20px;
-	background: white;
+	-moz-box-shadow:0px 0px 6px #d6d4d4; 
+	-webkit-box-shadow:0px 0px 6px #d6d4d4;
+	box-shadow:0px 0px 6px #d6d4d4;
 }
 .page_3_title{
 	margin-bottom: 0.2rem;
-	font-size:0.38rem;
+	font-size:37% !important;
 	color:#0098ff !important;
 }
 .page_3_content{
-	padding-bottom: 0.4rem;
+	padding-bottom: 0.5rem;
 	overflow: hidden;
 }
 .page_3_content .line_1{
@@ -223,7 +233,7 @@ body{
 	display: inline-block;
 	float: left;
 	position: relative;
-	width: 2.9rem;
+	width: 2.95rem;
 	height:3.64rem;
 	background: url('../img/blue.png');
 	background-size: 100% 100%;
@@ -287,7 +297,7 @@ body{
 	display: inline-block;
 	float: right;
 	position: relative;
-	width: 2.9rem;
+	width: 2.95rem;
 	height:3.64rem;
 	background: url('../img/green.png');
 	background-size: 100% 100%;
@@ -352,7 +362,7 @@ body{
 	float: left;
 	position: relative;
 	margin-top: 0.29rem;
-	width: 2.9rem;
+	width: 2.95rem;
 	height:3.64rem;
 	background: url('../img/yellow.png');
 	background-size: 100% 100%;
@@ -416,7 +426,7 @@ body{
 	float: right;
 	position: relative;
 	margin-top: 0.29rem;
-	width: 2.9rem;
+	width: 2.95rem;
 	height:3.64rem;
 	background: url('../img/purple.png');
 	background-size: 100% 100%;
@@ -480,13 +490,15 @@ body{
 .teacher-info{
 	display: flex;
 	width: 100%;
-	height: 1.51rem;
-	padding-top: 0.4rem;
+	height: 1.5rem;
+	padding-top: 0.2rem;
+	border-top: 1px solid #e5e5e5;
 }
 .teacher-info-pic{
-	flex: 0 0 1.5rem;
-	width: 1.5rem;
-	height: 1.5rem;
+	margin-top: 0.2rem;
+	flex: 0 0 1.1rem;
+	width: 1.1rem;
+	height: 1.1rem;
 	background:url('../img/teacher.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -501,9 +513,9 @@ body{
 	font-size: 0.34rem;
 }
 .evaluation{
-	padding-top: 0.3rem;
-	font-size: 36px;
-	line-height: 0.7rem;
+	padding-top: 0.1rem;
+	font-size: 34%;
+	line-height: 0.5rem;
 	color:#474747;
 }
 
@@ -515,25 +527,33 @@ body{
 	margin-top: 0.3rem;
 	margin-left: 0.3rem;
 	margin-right:0.3rem;
-	padding: 0.325rem;
-	border:2px solid #eaeaea;
+	padding: 0.5rem 0.325rem 0.5rem 0.325rem;
+	background-color:white;
 	border-radius: 20px;
-	background: white;
+	-moz-box-shadow:0px 0px 6px #d6d4d4; 
+	-webkit-box-shadow:0px 0px 6px #d6d4d4;
+	box-shadow:0px 0px 6px #d6d4d4;
 }
 .page_4_title{
 	margin-bottom: 0.2rem;
-	font-size:38%;
 	color:#0098ff !important;
+	font-size:37% !important;
 }
 .page_4 p{
-	line-height: 0.7rem;
-	font-size: 36px;
+	line-height: 0.5rem;
+	font-size: 34%;
 	color: #474747;
+	-webkit-text-size-adjust: none;
 }
 .page_4 .list_1{
-	padding: 0.4rem 0.29rem 0rem 0.29rem;
+	box-sizing: border-box;
+	margin-top: 0.3rem;
+	padding: 0.2rem 0.29rem 0.2rem 0.29rem;
+	width: 100%;
 	height: 1.4rem;
 	display: flex;
+	background-color: #fff6f9;
+	border-radius: 20px; 
 }
 .page_4 .list_1 span{
 	flex: 1;
@@ -573,20 +593,42 @@ body{
 	margin-bottom: 0.3rem;
 	margin-left: 0.3rem;
 	margin-right:0.3rem;
-	padding: 0.325rem;
-	border:2px solid #eaeaea;
+	padding: 0.5rem 0.325rem 0.5rem 0.325rem;
+	background-color:white;
 	border-radius: 20px;
-	background: white;
+	-moz-box-shadow:0px 0px 6px #d6d4d4; 
+	-webkit-box-shadow:0px 0px 6px #d6d4d4;
+	box-shadow:0px 0px 6px #d6d4d4;
 }
 .page_5_title{
-	margin-bottom: 0.2rem;
-	font-size:38%;
+	margin-bottom: 0.3rem;
 	color:#0098ff !important;
+	font-size:37% !important;
 }
 .page_5 p{
-	line-height: 0.7rem;
-	font-size: 36px;
+	margin-bottom: 0.3rem;
+	line-height: 0.5rem;
 	color: #474747;
+	font-size: 34%;
+	-webkit-text-size-adjust: none;
+}
+#myCanvatext{
+	position: absolute;
+	top: 0.8rem;
+	left: 0.6rem;
+}
+#myCanvatext p{
+	color: white !important;
+	line-height: 0.3rem;
+}
+#myCanvatext .result{
+	font-size: 40%;
+	line-height: 0.7rem;
+	margin-bottom: 0px;
+}
+#myCanvatext .results{
+	font-size: 25%;
+	margin-bottom: 0px;
 }
 .page_5 .color{
 	color: #42a5ff;
@@ -596,42 +638,47 @@ body{
 	position: relative;
 	width: 100%;
 	height: 3.8109rem;
-	background: -webkit-linear-gradient(#42a5ff, #95e5ff); /* Safari 5.1 - 6.0 */
-	background: -o-linear-gradient(#42a5ff, #95e5ff); /* Opera 11.1 - 12.0 */
-	background: -moz-linear-gradient(#42a5ff, #95e5ff); /* Firefox 3.6 - 15 */
-	background: linear-gradient(#42a5ff, #95e5ff); /* 标准的语法 */
-	border-radius: 20px;
+	background:url('../img/sea.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	overflow: hidden;
 }
+
+
 .parameter ul{
 	padding-top:0.2rem; 
 }
 .parameter ul li{
 	display: flex;
-	height: 1.6rem;
+	height: 1.5rem;
 	list-style: none;
 	color:#474747;
 	font-size: 0.34rem;
+	border-bottom: 1px solid #e5e5e5;
+}
+.parameter ul li:last-child{
+	border-bottom:0px;
 }
 .parameter .level{
-	flex: 0 0 1rem;
-	width: 1rem;
+	flex: 0 0 0.4rem;
+	margin-right: 0.6rem;
+	width: 0.4rem;
 	height: 100%;
-	line-height: 1.8rem;
+	line-height: 1.4rem;
 	text-align: center;
 }
 
 .parameter .name{
 	flex: 1;
-	padding-left: 0.3rem;
+	padding-left: 0.6rem;
 	height: 100%;
-	line-height: 1.6rem;
+	line-height: 1.5rem;
 }
 .parameter .grade{
 	flex: 0 0 1rem;
 	width: 1rem;
 	height: 100%;
-	line-height: 1.6rem;
+	line-height: 1.5rem;
 	text-align: center;
 }
 
@@ -639,14 +686,14 @@ body{
 .parameter img{
 	display: inline-block;
 	margin-top: 0.4rem;
-	width: 0.5rem;
-	height: 0.8rem;
+	width: 0.4rem;
+	height: 0.7rem;
 }
 .parameter .pic{
-	flex: 0 0 1.2rem;
+	flex: 0 0 1.1rem;
 	margin-top: 0.2rem;
-	width: 1.2rem;
-	height: 1.2rem;
+	width: 1.1rem;
+	height: 1.1rem;
 	border: 2px solid white;
 	border-radius: 50%;
 	background-repeat: no-repeat !important;
@@ -692,38 +739,15 @@ body{
 	background:url('../img/i.png');
 }
 
-#myCanvatext{
-	position: absolute;
-	top: 0rem;
-	left: 0rem;
-}
 .circle{
 	padding: 0px;
 	position: absolute;
-	top: 0.4rem;
-	right: 0.4rem;
+	top: 0.5rem;
+	right: 0.6rem;
 	width: 1.98rem;
 	height: 1.98rem;
 	background:url('../img/circle.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	font-size: 0px;
 }
-.circle .a{
-	display: inline-block;
-	padding-top:0.55rem;
-	padding-left:0.5rem;
-	font-size: 0.6rem;
-	color: white;
-}
-.circle .b{
-	display: inline-block;
-	position: relative;
-	left: -0.2rem;
-	font-size: 0.25rem;
-	color: white;
-}
-#myCanvaSea{
-	position: absolute;
-	border-radius: 20px;
-}
-
